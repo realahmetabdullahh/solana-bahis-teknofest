@@ -1,0 +1,166 @@
+/* Genel stil ve sıfırlama */
+* {
+   box-sizing: border-box;
+   margin: 0;
+   padding: 0;
+}
+
+body {
+   font-family: 'Roboto', sans-serif;
+   background-color: #15202b;
+   color: #ffffff;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   height: 100vh;
+   overflow: hidden;
+}
+
+.container {
+   width: 100%;
+   max-width: 1200px;
+   padding: 20px;
+   text-align: center;
+}
+
+.header {
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+   margin-bottom: 20px;
+}
+
+.logos {
+   display: flex;
+   align-items: center;
+}
+
+.solana-logo, .teknofest-logo, .nisantasi-logo {
+   max-width: 100px;
+   margin-right: 20px; /* Aralık ayarlanabilir */
+}
+
+#connectWallet, #disconnectWallet {
+   background-color: #4CAF50;
+   color: white;
+   padding: 10px 20px;
+   border: none;
+   cursor: pointer;
+   border-radius: 10px;
+   font-size: 16px;
+   transition: background-color 0.3s ease;
+}
+
+#connectWallet:hover, #disconnectWallet:hover {
+   background-color: #45a049;
+}
+
+h1 {
+   font-size: 28px;
+   font-weight: bold;
+   margin-bottom: 20px;
+}
+
+.input-container {
+   margin-bottom: 20px;
+}
+
+.input-container label, .input-container input {
+   display: block;
+   margin: 10px auto;
+   font-size: 20px;
+   color: #ffffff;
+   width: 100%;
+   max-width: 400px;
+   background-color: #1e2a35;
+   padding: 15px;
+   border: none;
+   border-radius: 10px;
+}
+
+button {
+   background-color: #4CAF50;
+   color: white;
+   padding: 15px 32px;
+   border: none;
+   cursor: pointer;
+   border-radius: 10px;
+   font-size: 20px;
+   margin-top: 20px;
+   transition: background-color 0.3s ease;
+}
+
+button:hover {
+   background-color: #45a049;
+}
+
+.cards-container {
+   display: none;
+   display: flex;
+   justify-content: center;
+   gap: 20px;
+   flex-wrap: wrap;
+   margin-top: 20px;
+}
+
+.card {
+   width: 90px;
+   height: 140px;
+   background-color: #1e2a35;
+   border-radius: 10px;
+   box-shadow: 0 8px 16px rgba(0, 0, 0, 0.4);
+   cursor: pointer;
+   transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+   position: relative;
+   border: 2px solid #4CAF50;
+}
+
+.card:hover {
+   transform: translateY(-10px);
+   box-shadow: 0 12px 20px rgba(0, 0, 0, 0.6);
+}
+
+.card-content {
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   align-items: center;
+   height: 100%;
+   font-size: 18px;
+   color: #ffffff;
+   padding: 10px;
+}
+
+.card-content img {
+   max-width: 60px;
+   margin-bottom: 10px;
+}
+
+.prize-message {
+   margin-top: 20px;
+   font-size: 24px;
+   text-align: center;
+}
+
+.live-chart-container {
+   background-color: rgba(0, 0, 0, 0.8);
+   padding: 15px;
+   border-radius: 20px;
+   margin-top: 30px;
+   box-shadow: 0 0 20px rgba(0, 0, 0, 0.6);
+   text-align: center;
+}
+
+.solana-price {
+   font-size: 24px;
+   font-weight: bold;
+   color: #ffffff;
+   margin-top: 10px;
+}
+
+/* Duyarlı Tasarım */
+@media (max-width: 768px) {
+   .card {
+       width: calc(50% - 20px);
+   }
+}

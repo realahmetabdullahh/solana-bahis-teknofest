@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bir Kart Seç - Solana Kazan</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <div class="logos">
+                <!-- Solana logosu --> 
+                <img src="https://cryptologos.cc/logos/solana-sol-logo.png" alt="Solana logo" class="solana-logo">
+                <!-- Teknofest logosu -->
+                <img src="https://upload.wikimedia.org/wikipedia/tr/1/1d/Teknofest_logo.png" alt="Teknofest Logo" class="teknofest-logo">
+                <!-- Nisantasi Üniversitesi logosu -->
+                <img src="https://mavidiploma.net/wp-content/uploads/2022/07/istanbul-nisantasi-universitesi-1.png" alt="Nisantasi Üniversitesi Logo" class="nisantasi-logo">
+            </div>
+            <button id="connectWallet">Cüzdanı Bağla</button>
+            <button id="disconnectWallet" style="display: none;">Cüzdanı Çıkış Yap</button>
+        </div>
+        <h1>Bir Kart Seç - Solana Kazan</h1>
+        <div class="input-container">
+            <label for="amount">Bahis miktarınızı Solana (SOL) olarak girin:</label>
+            <input type="number" id="amount" placeholder="SOL Cinsinden Miktar" step="0.01" min="0.01">
+            <button id="newGame">Gönder</button>
+        </div>
+        <div class="live-chart-container">
+            <div class="solana-price" id="solanaPrice">Canlı Solana fiyatı yükleniyor...</div>
+        </div>
+        <button id="returnButton" style="display: none;">Yeni Bahis</button>
+        <div class="cards-container" id="cardsContainer"></div>
+        <div class="prize-message" id="prizeMessage"></div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>

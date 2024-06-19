@@ -1,0 +1,28 @@
+Solana Bahis Uygulaması
+Solana Bahis, kullanıcıların Solana (SOL) kripto para birimi kullanarak bahis yapabilecekleri basit bir web uygulamasıdır. Kullanıcılar belirli bir SOL miktarını girdikten sonra, rastgele seçilen kartlar arasından ödül kazanma şansına sahiptirler.
+
+
+Özellikler
+Kullanıcı dostu arayüz
+Canlı Solana fiyatı güncellemeleri
+Rastgele ödül dağıtımı
+Kullanılan Teknolojiler
+Express.js
+Axios
+HTML, CSS, JavaScript
+Başlangıç
+
+Kurulum
+cd solana-bahis
+npm install
+Uygulamayı Çalıştırma
+
+npm start
+Tarayıcıda Görüntüleme
+
+node server.js 
+
+Uygulama http://localhost:3000 adresinde çalışacaktır.
+
+API Kullanımı
+Uygulama, canlı Solana fiyatları için CoinGecko API'sini kullanmaktadır. API sürekli olarak güncellenir ve kullanıcılara güncel piyasa verilerini sağlar.
